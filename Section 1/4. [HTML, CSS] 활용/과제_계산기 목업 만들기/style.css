@@ -1,0 +1,104 @@
+/* 초기화 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(img/background_img.png);
+    background-size: cover;
+
+}
+
+/* 틀 */
+.calculator {
+    width: 500px;
+    height: 800px;
+    margin: 100px 0px;
+}
+
+/* 상단 */
+.top {
+    height: 25%;
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 60px red;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+}
+
+/* 상단 계산 결과 */
+.cal_result {
+    width: 82%;
+    height: 73%;
+    box-shadow: 0 0 60px red;
+    border: 5px solid red;
+    border-radius: 5%;
+}
+
+/* 하단 */
+.bottom {
+    height: 75%;
+    border: 5px solid blue;
+    border-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 60px blue;
+    border-top-color: transparent;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.btn_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+.btn_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+.btn_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+.btn_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+/* 버튼 */
+.btn {
+    width: 80px;
+    height: 80px;
+    color: pink;
+    font-size: large;
+    border-color: pink;
+    border-radius: 20%;
+    background-color:transparent;
+    text-shadow: /* White glow */ 0 0 20px pink;
+    box-shadow: 0 0 20px pink;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(168, 168, 218);
+    transition: 1000ms;
+}
+
+#equal {
+    height: 193px;
+    border-radius: 10%;
+}
