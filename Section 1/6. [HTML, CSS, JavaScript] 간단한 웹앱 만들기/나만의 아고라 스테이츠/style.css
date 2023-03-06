@@ -1,0 +1,54 @@
+/* TODO: 보기 좋은 나만의 아고라 스테이츠를 위해서 CSS를 수정하세요. */
+
+/* 텍스트 크기 조정 */
+h2 {
+    font-size: 1rem;
+}
+
+.discussion__information{
+    font-size: 0.8rem;
+}
+
+
+/* 1. Discussion 컴포넌트 */
+.discussions__container {
+    box-sizing: border-box; /* 모든 요소에 border-box를 적용합니다. */
+    width: 540px;
+    position: relative;
+}
+li {
+    list-style: none; /* <li> 요소의 기본 스타일인 점을 보이지 않게 합니다. */
+}
+
+
+/* 2. 왼쪽 아바타 */
+.discussion__avatar--image {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 48px;
+}
+
+
+/* 3. 중간 Discussion 콘텐츠 */
+li.discussion__container{ 
+    display: flex;
+    align-items: center;
+}
+
+.discussion__title {
+    margin: 0px;
+}
+
+.discussion__information {
+    margin: 0px;
+}
+
+
+/* 4. 오른쪽 체크 표시 */
+.discussion__answered {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: x-large;
+}
+
