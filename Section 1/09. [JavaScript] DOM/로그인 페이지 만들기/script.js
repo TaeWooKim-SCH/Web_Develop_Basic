@@ -52,6 +52,7 @@ elInputUsername.onkeyup = function() {
     }
     else {
       strongUsername.classList.remove("hide"); // 조합 메세지 추가
+      elSuccessureMessage.classList.add('hide');
     }
   }
   else { // 4글자 이상이 아닐 때
@@ -81,13 +82,31 @@ inputpassword_re.onkeyup = function() {
 
   // 강력한 정책의 비밀번호
 inputpassword.onkeyup = function() {
-if (!strongPassword(inputpassword.value)) {
-  strongpassword_message.classList.remove('hide');
+  if (!strongPassword(inputpassword.value)) {
+    strongpassword_message.classList.remove('hide');
+  }
+  else {
+    strongpassword_message.classList.add('hide');
+  }
 }
-else {
-  strongpassword_message.classList.add('hide');
-}
-}
+
+
+// 클릭 이벤트
+let createaccount = document.querySelector(".signup>button");
+createaccount.addEventListener('click', function() {
+  if (!(isMoreThan4Length(elInputUsername.value)) || !onlyNumberAndEnglish(elInputUsername.value)) {
+    alert("아이디 똑바로 적어불라이");
+  }
+  else if (!isMatch(inputpassword.value, inputpassword_re.value) || !strongPassword(inputpassword.value)) {
+    alert("비밀번호 똑바로 적어시냐?");
+  }
+  else {
+    alert("회원가입 성공해수다 축하햄쪄");
+    location.reload();
+  }
+})
+
+
 
 
 
