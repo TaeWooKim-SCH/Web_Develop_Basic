@@ -1,0 +1,11 @@
+{
+  "name": "nam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "설치하기.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,71 @@
+/* 세팅 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* 상단 */
+header {
+    background: #fcf4d4;
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 첫 소개 */
+#my-img {
+    background-image: url(img/head_img.png);
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+}
+
+#my-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 50px 0px 0px 0px;
+}
+
+#my-img h2 {
+    padding: 60px;
+    margin: 0;
+}
+
+/* 목표, 다짐 */
+.goal {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
+    background: #fcf4d4;
+}
+
+.goal div {
+    width: 500px;
+    padding: 50px 0px;
+}
+
+ol {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 0;
+}
+
+/* 하단 */
+footer {
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+/* 초기화 */
+* {
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* 빨간 테두리 */
+.red_1 {
+    border: 3px solid red;
+    height: 50rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+
+.red_2 {
+    border: 3px solid red;
+    height: 50rem;
+    flex-grow: 3;
+    flex-shrink: 3;
+    display: column;
+    flex-direction: column;
+}
+
+.red_3 {
+    border: 3px solid red;
+    height: 50rem;
+    flex-grow: 6;
+    flex-shrink: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 첫 번째 박스 */
+.icon{
+    margin: 10px;
+    border: 1px dotted red;
+}
+
+
+/* 두 번째 박스 */
+.area_1 {
+    border: 1px dotted blue;
+    flex-grow: 4;
+    margin: 10px;
+}
+
+.area_2 {
+    border: 1px dotted blue;
+    flex-grow: 4;
+    margin: 10px;
+}
+
+.area_3 {
+    border: 1px dotted blue;
+    flex-grow: 2;
+    margin: 10px;
+}
+
+/* 세 번째 박스 */
+.area_4 {
+    border: 1px dotted blue;
+    flex-grow: 8;
+    margin: 10px;
+}
+
+.area_5 {
+    border: 1px dotted blue;
+    flex-grow: 2;
+    margin: 10px;
+}
